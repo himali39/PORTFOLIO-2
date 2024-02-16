@@ -1,0 +1,39 @@
+/* -------------------------------- Portfolio ------------------------------- */
+.portfolio-content {
+  padding: 2rem 3% 1rem 4%;
+}
+.portfolio .title-left:before {
+  bottom: 20px;
+}
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-hover {
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-info {
+  color: white;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #34b7a799;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.portfolio-hover:hover .portfolio-info {
+  bottom: 0;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}

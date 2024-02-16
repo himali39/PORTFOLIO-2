@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Counter
+--------------------------------------------------------------*/
+.section-counter {
+  background-image: url("../../../img/counterbg.jpg");
+}
+.counter-box {
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 577px) {
+  .counter-box {
+    margin-bottom: 1.8rem;
+  }
+}
+
+.counter-ico {
+  margin-bottom: 1rem;
+}
+
+.counter-ico .ico-circle {
+  height: 60px;
+  width: 60px;
+  line-height: 1.5;
+  box-shadow: 0 0 0 10px #cde1f8;
+}

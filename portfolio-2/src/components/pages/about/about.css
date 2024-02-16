@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+@media (min-width: 767px) {
+  .about-mf .box-pl2 {
+    margin-top: 3rem;
+    padding-left: 0rem;
+  }
+}
+
+.skill-mf span {
+  color: #4e4e4e;
+}
+
+.skill-mf .progress {
+  margin: 0.5rem 0 1.2rem 0;
+}
+
+.progress-bar {
+  background-color: var(--main-color);
+}

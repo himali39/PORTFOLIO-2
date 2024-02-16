@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+  background-image: url(../../../img/testibg.jpg);
+  background-position: center center;
+}
+.footer-paralax {
+  padding: 4rem 0 0 0;
+}
+
+@media (min-width: 767px) {
+  .contact-mf .box-pl2 {
+    margin-top: 3rem;
+    padding-left: 0rem;
+  }
+}
+
+.socials ul li {
+  display: inline-block;
+}
+
+.socials .ico-circle {
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  line-height: 1.2;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px  #34b7a7;
+  transition: all 500ms ease;
+}
+
+.socials .ico-circle:hover {
+  background-color: #34b7a7;
+  color: #fff;
+  box-shadow: 0 0 0 3px #cde1f8;
+  transition: all 500ms ease;
+}
+
