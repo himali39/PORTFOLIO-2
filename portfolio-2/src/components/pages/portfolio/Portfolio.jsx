@@ -8,11 +8,10 @@ import portImg6 from "../../../img/portfolio-6.jpg";
 import PortfolioBox from "./PortfolioBox";
 import { Col, Container, Row } from "react-bootstrap";
 import "../portfolio/portfolio.css";
-import Testimonial from "../testimonials/Testimonial";
 
 const Portfolio = () => {
   return (
-    <div id="portfolio" className="portfolio-mf sect-pt4 route">
+    <div id="portfolio" className="portfolio-mf sect-pt4  route">
       <Container>
         <Row>
           <Col sm={12}>
@@ -58,7 +57,7 @@ const Portfolio = () => {
           />
         </Row>
       </Container>
-      <Testimonial />
+     
     </div>
   );
 };

@@ -10,7 +10,7 @@ SwiperCore.use([Pagination, Autoplay]);
 
 const Testimonial = () => {
   return (
-    <div id="testimonial" className="testimonial paralax-mf bg-image">
+    <div id="testimonial" className="testimonial paralax-mf mt-5 bg-image">
       <div className="overlay-mf" />
       <Container>
         <Row>

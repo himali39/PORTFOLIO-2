@@ -7,6 +7,7 @@ import Portfolio from "../pages/portfolio/Portfolio";
 import Contact from "../pages/contact/Contact";
 import Blog from "../pages/blog/Blog";
 import Footer from "../pages/footer/Footer";
+import Testimonial from "../pages/testimonials/Testimonial";
 
 const MainComponent = () => {
   return (
@@ -16,6 +17,7 @@ const MainComponent = () => {
       <About />
       <Service />
       <Portfolio />
+      <Testimonial/>
       <Blog />
       <Contact />
       <Footer />

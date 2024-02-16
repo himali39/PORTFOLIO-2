@@ -16,7 +16,7 @@
 }
 .banner-content {
   position: absolute;
-  top: 12rem;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -40,7 +40,7 @@
 
 .banner-subtitle {
   font-weight: 600;
-  }
+}
 
 @media (min-width: 768px) {
   .banner-subtitle {

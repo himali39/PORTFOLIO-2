@@ -8,7 +8,7 @@
 .testimonial {
   background-image: url(../../../img/testibg.jpg);
   background-position: center center;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .testimonial-box .author-test img {

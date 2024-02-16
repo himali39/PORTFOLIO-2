@@ -2,54 +2,41 @@
 /*                               Header section                               */
 /* -------------------------------------------------------------------------- */
 #header {
-  transition: all 0.5s;
   z-index: 997;
-}
-#header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
-  padding: 12px 0;
-}
-
-#header .logo {
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #fff !important;
-}
-.nav-link {
-  color: #fff !important;
-  font-weight: 900 !important;
-  letter-spacing: 0.07rem !important;
-  position: relative;
-  text-transform: uppercase;
-}
-
-#header .navbar-nav .nav-link::after {
-  content: "";
   position: absolute;
-  bottom: 3px;
-  left: 0;
-  width: 90%;
-  height: 2px;
-  background-color: #ffff;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
+  right: 4%;
+  left: 20%;
+  top: 28%;
+  transition: top 0.3s;
+}
+#header.sticky {
+  position: fixed;
 }
 
-#header .navbar-nav .nav-link:hover::after {
-  transform: scaleY(1);
+.nav-link {
+  margin-bottom: 1rem;
+  color: #130d0d !important;
+  font-weight: 900 !important;
+  font-size: 22px;
+  letter-spacing: 0.07rem !important;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  padding-top: 0.12rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+#header .navbar-nav .nav-link:active {
+  color: blue;
 }
 
-#header .navbar-nav .nav-link.active::after {
-  transform: scaleY(1);
-}
 .scroll-to-top-button {
   position: fixed;
   width: 50px;
   height: 50px;
   bottom: 2px;
   right: 7px;
-  background-color:#3a7cc3; 
+  background-color: #3a7cc3;
   border-radius: 50%;
   border: none;
   padding: 10px;
@@ -60,8 +47,9 @@
 }
 
 .scroll-to-top-button:hover {
-  background-color: #0056b3; /* Change the hover background color as needed */
+  background-color: #0056b3;
 }
+
 @media (max-width: 768px) {
   .navbar-collapse {
     background-color: #fff !important;
@@ -71,7 +59,7 @@
     background-color: #fff !important;
   }
   .nav-link {
-    color: #000000 !important;
+    /* color: #000000 !important; */
     padding: 10px 20px !important;
   }
 }

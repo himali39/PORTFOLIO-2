@@ -23,7 +23,7 @@ const Banner = () => {
   return (
     <div
       id="banner"
-      className="banner route bg-image relative h-screen"
+      className="banner route bg-image relative "
       style={{ backgroundImage: `url(${bannerImage})` }}
     >
       <div className="overlay-itro"></div>
@@ -35,8 +35,11 @@ const Banner = () => {
             <span className="banner-subtitle" ref={typedElement}></span>
           </p>
           <p className="pt-3 ">
-            <Button href="#about" className="button-rouded  border-none maincolor">
-             More About Me
+            <Button
+              href="#about"
+              className="button-rouded  border-none maincolor"
+            >
+              More About Me
             </Button>
           </p>
         </Container>
