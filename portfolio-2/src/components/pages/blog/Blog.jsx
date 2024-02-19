@@ -9,7 +9,7 @@ import authorImg from "../../../img/about.jpg";
 
 const Blog = () => {
   return (
-    <div id="blog" className="blog-mf sect-pt4 route">
+    <section id="blog" className="blog-mf sect-pt4 route">
       <Container>
         <Row>
           <Col sm={12}>
@@ -49,7 +49,7 @@ const Blog = () => {
           />
         </Row>
       </Container>
-    </div>
+    </section>
   );
 };
 

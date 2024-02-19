@@ -13,7 +13,7 @@ import Counter from "./Counter";
 
 const Service = () => {
   return (
-    <div id="services" className="services-mf sect-pt4 route">
+    <section id="services" className="services-mf sect-pt4 route">
       <Container>
         <Row>
           <Col sm={12}>
@@ -60,7 +60,7 @@ const Service = () => {
         </Row>
       </Container>
       <Counter />
-    </div>
+    </section>
   );
 };
 

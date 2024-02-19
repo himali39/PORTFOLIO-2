@@ -11,7 +11,7 @@ import "../portfolio/portfolio.css";
 
 const Portfolio = () => {
   return (
-    <div id="portfolio" className="portfolio-mf sect-pt4  route">
+    <section id="portfolio" className="portfolio-mf sect-pt4  route">
       <Container>
         <Row>
           <Col sm={12}>
@@ -58,7 +58,7 @@ const Portfolio = () => {
         </Row>
       </Container>
      
-    </div>
+    </section>
   );
 };
 

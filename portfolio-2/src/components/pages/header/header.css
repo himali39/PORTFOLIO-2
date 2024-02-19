@@ -6,30 +6,74 @@
   position: absolute;
   right: 4%;
   left: 20%;
-  top: 28%;
+  top: 40%;
   transition: top 0.3s;
 }
 #header.sticky {
   position: fixed;
 }
 
-.nav-link {
-  margin-bottom: 1rem;
-  color: #130d0d !important;
-  font-weight: 900 !important;
-  font-size: 22px;
-  letter-spacing: 0.07rem !important;
-  border: 2px solid var(--main-color);
+.navbar .nav-link {
+  width: 8px;
+  height: 8px;
+  color: var(--main-color);
+  background-color: #e2d5d5e3;
+  margin-bottom: 6px;
+  margin-top: 6px;
   border-radius: 50%;
-  padding-top: 0.12rem;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-}
-#header .navbar-nav .nav-link:active {
-  color: blue;
+  transition: transform 0.3s, box-shadow 0.4s, border-color 0.4s, height 0.4s,
+    width 0.4s, background-color 0.4s;
+  position: relative;
 }
 
+.navbar-nav .nav-link.active
+ {
+  width: 16px;
+  height: 16px;
+  box-shadow: inset 0 0 0 5px var(--main-color);
+  color: var(--main-color);
+  background-color: #fff;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s;
+  z-index: 2;
+  max-width: 200px;
+  border: 1px solid darkgray;
+  color: white;
+  text-align: center;
+  letter-spacing: 0;
+  text-transform: none;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 4px 10px;
+  font-family: Lato, sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  display: flex;
+  position: absolute;
+  bottom: 50%;
+}
+.tooltip.navbar-tooltip {
+  margin-bottom: 0;
+  margin-right: 8px;
+  display: block;
+  bottom: auto;
+  right: 100%;
+}
+.side-nav-text {
+  font-family: Source Serif Pro, sans-serif;
+  font-size: 14px;
+}
+
+.navbar .nav-link:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 .scroll-to-top-button {
   position: fixed;
   width: 50px;
@@ -50,16 +94,10 @@
   background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
-  .navbar-collapse {
-    background-color: #fff !important;
-    border-radius: 5px !important;
-  }
-  .navbar-toggler {
-    background-color: #fff !important;
-  }
-  .nav-link {
-    /* color: #000000 !important; */
-    padding: 10px 20px !important;
+@media (max-width: 992px) {
+  .navbar{
+    display: none;
   }
 }
+
+ 

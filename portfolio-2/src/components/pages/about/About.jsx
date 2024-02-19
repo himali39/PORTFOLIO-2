@@ -5,7 +5,7 @@ import { Col, Container, ProgressBar, Row } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div id="about" className="about-mf sect-pt4 route">
+    <section id="about" className="about-mf sect-pt4 route">
       <Container>
         <Row>
           <Col sm={12}>
@@ -84,7 +84,7 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 };
 

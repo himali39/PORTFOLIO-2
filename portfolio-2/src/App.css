@@ -18,18 +18,6 @@ body {
   background-color: var(--main-color) !important;
   border: none !important;
 }
-/* .nav-link {
-  color: #1e1e1e;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-
-.nav-link:hover {
-  color: var(--main-color);
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-} */
-
 .color-a {
   text-decoration: none;
   color: #0078ff;
@@ -69,12 +57,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-
-@media (max-width: 1024px) {
-  .bg-image {
-    background-attachment: scroll;
-  }
+  background-position: center center;
 }
 
 .overlay-mf {
@@ -204,5 +187,22 @@ body {
 @media (min-width: 768px) {
   .box-shadow-full {
     padding: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bg-image {
+    background-attachment: scroll;
+    background-position-x: right;
+  }
+}
+@media (max-width: 425px) {
+  .bg-image {
+    background-position-x: center center;
+  }
+}
+@media (max-width: 320px) {
+  .bg-image {
+    background-position: right;
   }
 }

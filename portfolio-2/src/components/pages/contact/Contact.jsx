@@ -13,7 +13,7 @@ import {
 
 const Contact = () => {
   return (
-    <div
+    <section
       id="contact"
       className="contact paralax-mf footer-paralax bg-image sect-mt4 route"
     >
@@ -153,7 +153,7 @@ const Contact = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 };
 

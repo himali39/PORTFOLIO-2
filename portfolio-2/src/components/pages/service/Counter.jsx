@@ -11,7 +11,7 @@ import {
 
 const Counter = () => {
   return (
-    <div className="section-counter paralax-mf mt-5 bg-image">
+    <section className="section-counter paralax-mf mt-5 bg-image">
       <div className="overlay-mf" />
       <Container className=" position-relative">
         <Row>
@@ -93,7 +93,7 @@ const Counter = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 };
 

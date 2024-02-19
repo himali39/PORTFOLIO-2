@@ -21,7 +21,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div
+    <section
       id="banner"
       className="banner route bg-image relative "
       style={{ backgroundImage: `url(${bannerImage})` }}
@@ -44,7 +44,7 @@ const Banner = () => {
           </p>
         </Container>
       </div>
-    </div>
+    </section>
   );
 };
 
