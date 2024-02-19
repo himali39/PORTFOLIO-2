@@ -11,7 +11,7 @@ const About = () => {
           <Col sm={12}>
             <Col className="box-shadow-full pb-5 ">
               <Row>
-                <Col md={6}>
+                <Col md={6} data-aos="zoom-in">
                   <div className="about-img ">
                     <img
                       src={aboutImage}
@@ -46,7 +46,7 @@ const About = () => {
                     </p>
                   </div>
                 </Col>
-                <Col md={6}>
+                <Col md={6} data-aos="zoom-in">
                   <div className="title-box-2">
                     <h5 className="title-left fs-1">About me</h5>
                   </div>

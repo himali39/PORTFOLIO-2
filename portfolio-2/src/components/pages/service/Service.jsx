@@ -28,6 +28,7 @@ const Service = () => {
         </Row>
         <Row>
           <ServiceBox
+            
             icon={<BsDiagram3 />}
             title="Web Design"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident."

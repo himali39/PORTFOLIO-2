@@ -6,7 +6,7 @@ import "../service/service.css";
 const ServiceBox = ({ icon, title, description }) => {
   return (
     <Col md={4}>
-      <div className="service-box text-center mb-3">
+      <div className="service-box text-center mb-3" data-aos="fade-up">
         <Card.Body>
           <div className="mb-4">
             <span className="ico-circle">{icon}</span>

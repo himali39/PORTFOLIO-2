@@ -24,7 +24,7 @@ const Portfolio = () => {
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row data-aos="fade-up">
           <PortfolioBox
             img={portImg1}
             title="Loreda Cuno Nere"
@@ -57,7 +57,6 @@ const Portfolio = () => {
           />
         </Row>
       </Container>
-     
     </section>
   );
 };

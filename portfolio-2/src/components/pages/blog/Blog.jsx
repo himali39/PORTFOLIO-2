@@ -22,7 +22,7 @@ const Blog = () => {
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row data-aos="fade-up">
           <BlogBox
             img={blog1}
             category="Marketing"

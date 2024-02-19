@@ -24,7 +24,7 @@ const Contact = () => {
             <div className="mt-4">
               <div id="contact" className="box-shadow-full">
                 <Row>
-                  <Col md={6}>
+                  <Col md={6} data-aos="fade-right">
                     <div className="title-box-2">
                       <h5 className="title-left">Send Message Us</h5>
                     </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                       </Button>
                     </Col>
                   </Col>
-                  <Col md={6}>
+                  <Col md={6} data-aos="fade-left">
                     <div className="title-box-2 pt-4 pt-md-0">
                       <h5 className="title-left">Get in Touch</h5>
                     </div>
