@@ -33,7 +33,8 @@ const Contact = () => {
                       {/* your name */}
                       <Form.Group
                         className="mb-3"
-                        controlId="exampleForm.ControlInput1"
+                        controlId="name"
+                        name="name"
                       >
                         <Form.Control type="text" placeholder="Your Name" />
                       </Form.Group>
@@ -42,7 +43,8 @@ const Contact = () => {
                       {/* your subject */}
                       <Form.Group
                         className="mb-3"
-                        controlId="exampleForm.ControlInput1"
+                        controlId="subject"
+                        name="subject"
                       >
                         <Form.Control type="text" placeholder="Your Subject" />
                       </Form.Group>
@@ -51,7 +53,8 @@ const Contact = () => {
                       {/* your email */}
                       <Form.Group
                         className="mb-3"
-                        controlId="exampleForm.ControlInput1"
+                        controlId="email"
+                        id="email"
                       >
                         <Form.Control type="email" placeholder="Your Email" />
                       </Form.Group>
@@ -59,7 +62,8 @@ const Contact = () => {
 
                       <Form.Group
                         className="mb-3"
-                        controlId="exampleForm.ControlTextarea1"
+                        controlId="textarea"
+                        name="textarea"
                       >
                         <Form.Control
                           as="textarea"
