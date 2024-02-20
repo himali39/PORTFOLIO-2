@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Button } from "react-bootstrap";
-
 import "./header.css";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleNavClose = () => {
     document.querySelector(".navbar-toggler").click();
@@ -21,10 +21,11 @@ const Header = () => {
   };
 
   useEffect(() => {
-   
-    const handleScroll = () => {
+       const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsSticky(scrollPosition > 100);
+            const shouldAddClass = scrollPosition > 100;
+      setIsSticky(shouldAddClass);
+       setIsScrolled(shouldAddClass);
 
       // Get all the sections on the page
       const sections = document.querySelectorAll("section");
@@ -115,12 +116,14 @@ const Header = () => {
       </Navbar>
 
       {/* Scroll to Top Button */}
-      <Button
-        className="d-flex scroll-to-top-button maincolor"
-        onClick={scrollToTop}
-      >
-        &#8593;
-      </Button>
+      {isScrolled && (
+        <Button
+          className="d-flex scroll-to-top-button maincolor"
+          onClick={scrollToTop}
+        >
+          &#8593;
+        </Button>
+      )}
     </section>
   );
 };

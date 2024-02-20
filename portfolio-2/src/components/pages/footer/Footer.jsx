@@ -10,18 +10,16 @@ const Footer = () => {
           <Col sm={12}>
             <div className="copyright-box">
               <p className="copyright">
-                © Copyright <strong>DevWorksFolio</strong>. All Rights Reserved
-              </p>
-              <div className="credits">
-                Designed by
+                ©
                 <a
                   href="https://idea2codeinfotech.com/"
                   className="text-decoration-none ms-1"
                   target="_blank"
                 >
-                  idea2codeInfotech
+                  <strong>idea2codeinfotech.</strong>
                 </a>
-              </div>
+                All Rights Reserved
+              </p>
             </div>
           </Col>
         </Row>
