@@ -36,15 +36,15 @@ const Banner = () => {
             Hello, world!
           </p>
           <h1 className="banner-title " data-aos="zoom-in">
-            I am Mario Rossi
+            JANNY STANBRIDGE
           </h1>
-          <p className="banner-subtitle" >
+          <p className="banner-subtitle">
             <span className="banner-subtitle" ref={typedElement}></span>
           </p>
           <p className="pt-3 ">
             <Button
               href="#about"
-              className="button-rouded  border-none maincolor"
+              className="mainbutton button-rouded  border-none cursor-pointer"
             >
               More About Me
             </Button>

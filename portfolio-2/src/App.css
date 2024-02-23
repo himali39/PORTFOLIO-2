@@ -1,5 +1,5 @@
 :root {
-  --main-color: #34b7a7;
+  --main-color: #00b4d9;
   --des-color: #4e4e4e;
 }
 
@@ -20,8 +20,7 @@ body {
 }
 .color-a {
   text-decoration: none;
-  color: #0078ff;
-}
+  }
 
 .color-d {
   color: #f5f5f5;
@@ -166,7 +165,7 @@ body {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #34b7a7;
+  box-shadow: 0 0 0 10px #00b4d9;
   display: block;
 }
 
@@ -205,4 +204,19 @@ body {
   .bg-image {
     background-position: right;
   }
+}
+
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000; /* Set your desired cursor color */
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference; /* Optional: blend mode for better visibility */
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-out;
+  will-change: transform;
 }

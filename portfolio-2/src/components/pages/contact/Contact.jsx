@@ -24,18 +24,14 @@ const Contact = () => {
             <div className="mt-4">
               <div id="contact" className="box-shadow-full">
                 <Row>
-                  <Col md={6} data-aos="fade-right">
+                  <Col md={6} data-aos="fade-down">
                     <div className="title-box-2">
                       <h5 className="title-left">Send Message Us</h5>
                     </div>
 
                     <Form>
                       {/* your name */}
-                      <Form.Group
-                        className="mb-3"
-                        controlId="name"
-                        name="name"
-                      >
+                      <Form.Group className="mb-3" controlId="name" name="name">
                         <Form.Control type="text" placeholder="Your Name" />
                       </Form.Group>
                       {/* end of code */}
@@ -51,11 +47,7 @@ const Contact = () => {
                       {/* end of code */}
 
                       {/* your email */}
-                      <Form.Group
-                        className="mb-3"
-                        controlId="email"
-                        id="email"
-                      >
+                      <Form.Group className="mb-3" controlId="email" id="email">
                         <Form.Control type="email" placeholder="Your Email" />
                       </Form.Group>
                       {/* end of the code */}
@@ -74,12 +66,16 @@ const Contact = () => {
                     </Form>
 
                     <Col md={12} className="text-center">
-                      <Button type="submit"  href="#banner" className="button-rouded maincolor">
+                      <Button
+                        type="submit"
+                        href="#banner"
+                        className="button-rouded maincolor"
+                      >
                         Send Message
                       </Button>
                     </Col>
                   </Col>
-                  <Col md={6} data-aos="fade-left">
+                  <Col md={6} data-aos="fade-down">
                     <div className="title-box-2 pt-4 pt-md-0">
                       <h5 className="title-left">Get in Touch</h5>
                     </div>
@@ -107,7 +103,14 @@ const Contact = () => {
                           <span>
                             <BsEnvelope />
                           </span>
-                          contact@example.com
+                          <a
+                            href="#"
+                            className="contact-link"
+                            target="_black"
+                            
+                          >
+                            contact@example.com
+                          </a>
                         </li>
                       </ul>
                     </div>

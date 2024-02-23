@@ -31,13 +31,20 @@
   font-size: 2rem;
   font-weight: 600;
 }
+.mainbutton {
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+}
+.mainbutton:hover {
+  background-color: var(--main-color);
+}
 
 @media (min-width: 768px) {
   .banner-title {
     font-size: 4.5rem;
   }
 }
-
 .banner-subtitle {
   font-weight: 600;
 }
@@ -47,5 +54,3 @@
     font-size: 2.1rem;
   }
 }
-
-

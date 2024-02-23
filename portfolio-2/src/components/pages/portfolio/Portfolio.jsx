@@ -58,7 +58,7 @@ const Portfolio = () => {
           />
         </Row>
       </Container>
-        <Testimonial />
+      <Testimonial />
     </section>
   );
 };

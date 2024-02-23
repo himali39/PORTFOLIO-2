@@ -7,12 +7,7 @@ import "./header.css";
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("");
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const handleNavClose = () => {
-    document.querySelector(".navbar-toggler").click();
-  };
-
+  // const [showScrollButton, setShowScrollButton] = useState(false);
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -20,30 +15,37 @@ const Header = () => {
     });
   };
 
-  useEffect(() => {
-       const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-            const shouldAddClass = scrollPosition > 100;
-      setIsSticky(shouldAddClass);
-       setIsScrolled(shouldAddClass);
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    const shouldAddClass = scrollPosition > 100;
+    setIsSticky(shouldAddClass);
 
-      // Get all the sections on the page
-      const sections = document.querySelectorAll("section");
+    // Get all the sections on the page
+    const sections = document.querySelectorAll("section");
 
-      // Find the section which is currently in view
-      let currentSection = "";
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (scrollPosition >= sectionTop - sectionHeight / 3) {
-          currentSection = section.id;
-        }
-      });
+    // Find the section which is currently in view
+    let currentSection = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (scrollPosition >= sectionTop - sectionHeight / 3) {
+        currentSection = section.id;
+      }
+    });
 
-      // Update the active section state
+    if (currentSection !== activeSection) {
       setActiveSection(currentSection);
-    };
+    }
 
+    // setShowScrollButton(scrollPosition > 500);
+  };
+
+  const handleNavClick = (section) => {
+    handleScroll(); // Call handleScroll to update active section on click
+    // Additional logic if needed for handling clicks
+  };
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -52,14 +54,14 @@ const Header = () => {
   }, []);
 
   return (
-    <section id="header" className={isSticky ? "sticky" : ""}>
+    <section id="header" className={isSticky ? "sticky " : ""}>
       <Navbar expand="lg">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto flex-column">
             <Nav.Link
               href="#banner"
-              onClick={() => handleNavClose("banner")}
+              onClick={() => handleNavClick("banner")}
               className={activeSection === "banner" ? "active" : ""}
             >
               <div className="tooltip navbar-tooltip">
@@ -68,7 +70,7 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link
               href="#about"
-              onClick={() => handleNavClose("about")}
+              onClick={() => handleNavClick("about")}
               className={activeSection === "about" ? "active" : ""}
             >
               <div className="tooltip navbar-tooltip">
@@ -77,7 +79,7 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link
               href="#services"
-              onClick={() => handleNavClose("services")}
+              onClick={() => handleNavClick("services")}
               className={activeSection === "services" ? "active" : ""}
             >
               <div className="tooltip navbar-tooltip">
@@ -86,7 +88,7 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link
               href="#portfolio"
-              onClick={() => handleNavClose("portfolio")}
+              onClick={() => handleNavClick("portfolio")}
               className={activeSection === "portfolio" ? "active" : ""}
             >
               <div className="tooltip navbar-tooltip">
@@ -95,7 +97,7 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link
               href="#blog"
-              onClick={() => handleNavClose("blog")}
+              onClick={() => handleNavClick("blog")}
               className={activeSection === "blog" ? "active" : ""}
             >
               <div className="tooltip navbar-tooltip">
@@ -104,7 +106,7 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link
               href="#contact"
-              onClick={() => handleNavClose("contact")}
+              onClick={() => handleNavClick("contact")}
               className={activeSection === "contact" ? "active" : ""}
             >
               <div className="tooltip navbar-tooltip">
@@ -116,14 +118,14 @@ const Header = () => {
       </Navbar>
 
       {/* Scroll to Top Button */}
-      {isScrolled && (
+      {/* {showScrollButton && (
         <Button
           className="d-flex scroll-to-top-button maincolor"
           onClick={scrollToTop}
         >
           &#8593;
         </Button>
-      )}
+      )} */}
     </section>
   );
 };

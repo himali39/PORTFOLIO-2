@@ -27,14 +27,19 @@
   border-radius: 50%;
   line-height: 1.2;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px  #34b7a7;
+  box-shadow: 0 0 0 3px #00b4d9;
   transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-  background-color: #34b7a7;
+  background-color:var(--main-color);
   color: #fff;
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
 }
-
+.contact-link {
+  cursor: pointer;
+  color: var(--des-color);
+  text-decoration: none;
+  font-weight: 500;
+}
