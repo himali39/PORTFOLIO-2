@@ -31,14 +31,7 @@
   font-size: 2rem;
   font-weight: 600;
 }
-.mainbutton {
-  background-color: var(--main-color);
-  border: none;
-  cursor: pointer;
-}
-.mainbutton:hover {
-  background-color: var(--main-color);
-}
+
 
 @media (min-width: 768px) {
   .banner-title {

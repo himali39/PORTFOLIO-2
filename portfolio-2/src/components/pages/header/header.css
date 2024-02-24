@@ -4,8 +4,8 @@
 #header {
   z-index: 997;
   position: absolute;
-  right: 4%;
-  left: 20%;
+  right: 5%;
+  /* left: 20%; */
   top: 40%;
   transition: top 0.3s;
 }
@@ -22,17 +22,8 @@
   margin-bottom: 6px;
   margin-top: 6px;
   border-radius: 50%;
-  transition: transform 0.3s, box-shadow 0.4s, border-color 0.4s, height 0.4s,
-    width 0.4s, background-color 0.4s;
+  transition: transform 0.3s, box-shadow 0.4s, border-color 0.4s, height 0.4s, width 0.4s, background-color 0.4s;
   position: relative;
-}
-
-.navbar .nav-link.active {
-  width: 16px;
-  height: 16px;
-  box-shadow: inset 0 0 0 5px var(--main-color);
-  color: var(--main-color);
-  background-color: #fff;
 }
 
 .tooltip {
@@ -99,4 +90,35 @@
   .navbar {
     display: none;
   }
+}
+
+.navbar-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+/* Add these styles to your existing CSS file */
+
+#header .navbar {
+  justify-content: flex-end; /* Align Navbar items to the right */
+}
+
+#header .navbar-nav {
+  margin-left: auto; /* Push the Navbar items to the right */
+}
+
+#header .navbar .nav-link {
+  margin-left: 15px; /* Add some spacing between Navbar items */
+}
+
+#header .navbar-toggler {
+  order: -1; /* Move the Navbar toggle button to the left */
+}
+
+.navbar .nav-link.active {
+  width: 16px;
+  height: 16px;
+  box-shadow: inset 0 0 0 5px var(--main-color);
+  color: var(--main-color);
+  background-color: #fff;
 }

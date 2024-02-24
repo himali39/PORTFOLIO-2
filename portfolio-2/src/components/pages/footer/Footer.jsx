@@ -4,7 +4,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contact">
       <Container>
         <Row>
           <Col sm={12}>

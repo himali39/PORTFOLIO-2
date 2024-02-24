@@ -1,6 +1,7 @@
 import React from "react";
 import "./contact.css";
-import { Button, Col, Container, Form, Navbar, Row } from "react-bootstrap";
+import "../../../../src/App.css";
+import { Col, Container, Form, Navbar, Row } from "react-bootstrap";
 import {
   BsGeoAlt,
   BsTelephone,
@@ -14,11 +15,22 @@ import {
 const Contact = () => {
   return (
     <section
-      id="contact"
-      className="contact paralax-mf footer-paralax bg-image sect-mt4 route"
+      // id="contact"
+      className="contact-main paralax-mf footer-paralax bg-image sect-mt4 route"
     >
       <div className="overlay-mf" />
       <Container>
+        {/* <Row>
+          <Col sm={12}>
+            <div className="title-box text-center">
+              <h3 className="title-a title-left mb-0">Contact</h3>
+              <p className="subtitle-a mt-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div className="line-mf" />
+            </div>
+          </Col>
+        </Row> */}
         <Row>
           <Col sm={12}>
             <div className="mt-4">
@@ -66,13 +78,9 @@ const Contact = () => {
                     </Form>
 
                     <Col md={12} className="text-center">
-                      <Button
-                        type="submit"
-                        href="#banner"
-                        className="button-rouded maincolor"
-                      >
+                      <a type="submit" href="#banner" className="mainbutton">
                         Send Message
-                      </Button>
+                      </a>
                     </Col>
                   </Col>
                   <Col md={6} data-aos="fade-down">
@@ -103,12 +111,7 @@ const Contact = () => {
                           <span>
                             <BsEnvelope />
                           </span>
-                          <a
-                            href="#"
-                            className="contact-link"
-                            target="_black"
-                            
-                          >
+                          <a href="#" className="contact-link" target="_black">
                             contact@example.com
                           </a>
                         </li>

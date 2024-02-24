@@ -1,6 +1,7 @@
 :root {
   --main-color: #00b4d9;
   --des-color: #4e4e4e;
+  --hover-color: #00b4d98a;
 }
 
 * {
@@ -14,13 +15,23 @@ body {
   background-color: #f5f5f5;
   color: var(--des-color);
 }
-.maincolor {
-  background-color: var(--main-color) !important;
-  border: none !important;
+.mainbutton {
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s;
+}
+
+.mainbutton:hover {
+  background-color: var(--hover-color);
 }
 .color-a {
   text-decoration: none;
-  }
+}
 
 .color-d {
   color: #f5f5f5;
@@ -205,18 +216,23 @@ body {
     background-position: right;
   }
 }
+a:hover {
+  cursor: pointer;
+}
 
-
-.custom-cursor {
-  width: 20px;
-  height: 20px;
-  background-color: #ff0000; /* Set your desired cursor color */
-  border-radius: 50%;
+.zoom-cursor {
   position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: #00b4d9cc;
+  border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  mix-blend-mode: difference; /* Optional: blend mode for better visibility */
+  /* mix-blend-mode: difference; */
+  transition: transform 0.15s ease;
   transform: translate(-50%, -50%);
-  transition: transform 0.2s ease-out;
-  will-change: transform;
+  transition-property: opacity, transform, background-color;
+  transition-duration: 0.15s, 0.15s, 0.3s;
+  transition-timing-function: ease, ease, cubic-bezier(0.5, 0, 0.5, 1);
+  will-change: transform, background-color, opacity;
 }

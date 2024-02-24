@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     <App />
-    <div id="customCursor" className="custom-cursor"></div>
+    
   </>
 );
 
